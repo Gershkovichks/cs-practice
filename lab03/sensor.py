@@ -1,13 +1,10 @@
-Max = (float(input()))
+Max = float(input())
 N = int(input())
 
 Maxel = 0
-maxN = 0
+maxN = -100000000000`
 errorN = 0
 sum = 0
-
-res = []
-
 
 for i in range(N):
     Str = input()
