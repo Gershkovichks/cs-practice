@@ -3,6 +3,7 @@ def winner(names, scores):
     for i in range(len(scores)):
         if Max == scores[i]:
             name = names[i]
+            break
     return name
 
 def average(scores):
@@ -14,7 +15,7 @@ def average(scores):
 
 def ranking(names, scores):
     sorted_list = sorted(zip(names, scores), key=lambda x: x[1], reverse=True)
-    return sorted_list
+    return [name for name, scores in sorted_list]
 
 def above_average(names, scores):
     Avg = average(scores)
